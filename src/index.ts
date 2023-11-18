@@ -35,5 +35,18 @@ let user: {firstName:string, age:number, id:number} = {
 
 user.firstName = 'test'
 
+/*
+//
+// type inference with object literals
+//
+*/
 
+let person  = {
+    name: 'Sumit Nair',
+    age: 30
+}
 
+person.name = "Sumit"
+person.age = 31
+
+const age = person.age
