@@ -37,3 +37,29 @@ let person = {
 person.name = "Sumit";
 person.age = 31;
 const age = person.age;
+/*
+// Functions
+*/
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+const subtractTwoNumbers = (a, b) => {
+    return a - b;
+};
+addTwoNumbers(5, 6);
+subtractTwoNumbers(8, 2);
+function addAllNumbers(items) {
+    const total = items.reduce((a, b) => a + b, 0);
+    console.log(total);
+}
+addAllNumbers([5, 5, 6, 7, 8]);
+/*
+*
+*Return type inference
+*
+*/
+function formatGreeting(name, greeting) {
+    return `${name}, ${greeting}`;
+}
+const result = formatGreeting('Sumit', 'How are you ?');
+console.log(result);
