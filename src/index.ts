@@ -23,4 +23,17 @@ let things = [1, true, 'some string']
 
 const s = things[2]
 
+/*
+// Object literals
+*/
+
+let user: {firstName:string, age:number, id:number} = {
+    firstName: 'Sumit',
+    age:30,
+    id:2
+}
+
+user.firstName = 'test'
+
+
 
